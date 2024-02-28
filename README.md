@@ -18,7 +18,7 @@ To run this project locally and set up a Docker container, follow the steps belo
 git clone git@github.com:chandrasekharkolla/restapi-go.git
 cd restapi-go
 
-Initialize Go Modules
+### Initialize Go Modules
 Run the following command to initialize Go modules and create the go.mod file:
 
 bash
