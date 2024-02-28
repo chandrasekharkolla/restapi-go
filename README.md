@@ -13,7 +13,16 @@ To run this project locally and set up a Docker container, follow the steps belo
 - Install [Docker](https://docs.docker.com/get-docker/)
 
 ### Clone the Repository
-
+```javascript
+import copyCodeBlock from '@pickra/copy-code-block';
+// OR
+const copyCodeBlock = require('@pickra/copy-code-block');
+```
+Then add it to your code
+```javascript
+import anHtmlFile from './anHtmlFile.html';
+copyCodeBlock(anHtmlFile);
+```
 ```bash
 git clone git@github.com:chandrasekharkolla/restapi-go.git
 cd restapi-go
