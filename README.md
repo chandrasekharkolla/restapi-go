@@ -21,25 +21,25 @@ cd restapi-go
 Initialize Go Modules
 Run the following command to initialize Go modules and create the go.mod file:
 
-```bash
+bash
 Copy code
 go mod init
 Download Dependencies
 Execute the following command to download and tidy up project dependencies:
 
-```bash
+bash
 Copy code
 go mod tidy
 Build Docker Image
 Build the Docker image with the following command:
 
-```bash
+bash
 Copy code
 docker build -t <imagename> .
 Run Docker Container
 Start a Docker container in detached mode, mapping port 8080:
 
-```bash
+bash
 Copy code
 docker run -d -p 8080:8080 <imagename>
 Access the Application
