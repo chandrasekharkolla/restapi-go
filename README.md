@@ -13,16 +13,7 @@ To run this project locally and set up a Docker container, follow the steps belo
 - Install [Docker](https://docs.docker.com/get-docker/)
 
 ### Clone the Repository
-```javascript
-import copyCodeBlock from '@pickra/copy-code-block';
-// OR
-const copyCodeBlock = require('@pickra/copy-code-block');
-```
-Then add it to your code
-```javascript
-import anHtmlFile from './anHtmlFile.html';
-copyCodeBlock(anHtmlFile);
-```
+
 ```bash
 git clone git@github.com:chandrasekharkolla/restapi-go.git
 cd restapi-go
@@ -32,28 +23,21 @@ cd restapi-go
 Run the following command to initialize Go modules and create the go.mod file:
 
 ```bash
-Copy code
 go mod init
-Download Dependencies
+```
+It downloads Dependencies that are required for the restapi
 Execute the following command to download and tidy up project dependencies:
-```
 
 ```bash
-Copy code
 go mod tidy
-Build Docker Image
+```
+Build the doker image
 Build the Docker image with the following command:
-```
-
 ```bash
-Copy code
 docker build -t <imagename> .
-Run Docker Container
-Start a Docker container in detached mode, mapping port 8080:
 ```
-
+Start a Docker container in detached mode, mapping port 8080:
 ```bash
-Copy code
 docker run -d -p 8080:8080 <imagename>
 ```
 Access the Application
