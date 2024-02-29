@@ -23,7 +23,7 @@ cd restapi-go
 Run the following command to initialize Go modules and create the go.mod file:
 
 ```bash
-go mod init
+go mod init restapi
 ```
 It downloads Dependencies that are required for the restapi
 Execute the following command to download and tidy up project dependencies:
